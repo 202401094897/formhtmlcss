@@ -1,75 +1,111 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  color: rgb(2, 2, 2);
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0;
-}
-
-nav ul li a {
-  color: rgb(105, 28, 28);
-  text-decoration: none;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #261750;
 }
 
-form label {
-  margin-bottom: 5px;
+.container {
+  text-align: center;
+  background-color: #c4b9e2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px (0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid #714adc;
 }
 
-form input,
-form textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+h1 {
+  color: #261750;
 }
 
-form button {
-  padding: 10px;
+p {
+  color: #261750;
+  font-size: 1.1em;
+}
+
+button {
+  background-color: #3b0460;
+  color: aliceblue;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #333;
-  color: white;
   cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-form button:hover {
-  background-color: #555;
+button:hover {
+  background-color: #714adc;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  background-color: #aa96e2;
+  color: #261750;
+  padding: 10%;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
   padding: 10px;
-  position: fixed;
-  width: 100%;
-  button: 0;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #372076;
+  border-radius: 5px;
+  font-size: 1em;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+button.remover {
+  background-color: aliceblue;
+  color: #261750;
+  padding: 5px, 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.6em;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.remover:hover {
+  background-color: #4f1281;
+}
+
+button.editar {
+  background-color: aliceblue;
+  color: #261750;
+  padding: 5px, 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.6em;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.editar:hover {
+  background-color: #4f1281;
+}
+
+input[type="text"]:focus {
+  border-color: #4f1281;
+  box-shadow: inset 0 2px 4px rgba(123, 29, 173, 0.3);
 }
